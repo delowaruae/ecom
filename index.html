@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="description" content="this is an e-commerce Project forfor making Testing">
+		<link rel="stylesheet" href="style.css">
+	<title> E commerce Project </title>
+</head>
+<body>
+/*navbar starts here*/
+<i class="fas fa-bars fa-2x" id="menu-icon"> </i>
+<nav id="menu" class="hidden">
+<nav>   
+	<ul class="nav-upper 
+		flex-space-around">
+		<li class="nav_list"> 
+			<a href="index.html" 
+			class="nav_link">Home</a> 
+		</li>
+
+		<li class="nav_list"> 
+			<a href="register.html" 
+			class="nav_link">Register</a> 
+		</li>
+
+        <li class="nav_list"> 
+			<a href="login.html" 
+			class="nav_link">Login</a> 
+		</li>
+
+        <li class="nav_list"> 
+			<a href="logout.html" 
+			class="nav_link">Log Out</a> 
+		</li>
+
+        <li class="nav_list"> 
+			<a href="Contact.html" 
+			class="nav_link">Contact</a> 
+		</li>
+
+		
+        <li class="nav_list"> 
+			<a href="profile.html" class="nav_link">
+			<img class="profile-icon"src="images/profile1.png" alt="profile icon"/>
+			</a> 
+		</li>
+	</ul>
+
+	<ul class="nav-lower
+				flex-space-around">
+		<li class="nav_list"> 
+			<a href="/index.html" 
+			class="nav_brand nav_link">UAE Toys </a> 
+		</li>
+
+		<li class="nav_list"> 
+			<a href="/cart.html" class="nav_link">
+			<span> <i class="fa-solid fa-cart-shopping"> </i> </span>
+			Cart 2 products - $124.40	
+			 </a> 
+		</li>
+	</ul>
+
+</nav>
+
+<header class="header">
+	<div class="banner flex-space-around">  
+		<marquee class="banner_title" behavior=""direction=""> 50% Sales going on </marquee>
+			<div class="feature flex-space-around">
+				<article class="feature "> 
+					<i class="fa-solid fa-truck feature_icon"> </i>
+					<h3> Shipping Within 3 days   </h3>			
+				</article>
+
+				<article class="feature"> 
+					<i class="fa-brand fa-rocketchat feature_icon"> </i>
+					<h3> Support 24/7   </h3>			
+				</article>
+
+				<article class="feature"> 
+					<i class="fa-regular fa-credit-card feature_icon"> </i>
+					<h3> Safe Payment   </h3>			
+				</article>
+			</div>
+
+</header>
+<main class="flex-center">
+	<div class="sidebar">
+	<section class="categories-section">     
+	<h3 class="section-title"> Catagories</h3>		
+<ul class="list">
+	<li class="list_item">
+		<label for="Mobile & computer">
+			<input type="checkbox" name="Mobile & computer"
+				   id="Phone" value="Mobile & computer" />
+			Mobile & computer
+		</label>
+	</li>
+
+	<li class="list_item">
+		<label for="Tablets">
+			<input type="checkbox" name="Tablets"
+			id="Tablets" value="Tablets"/>
+			Tablets
+		</label>
+	</li>
+	<li class="list_item">
+		<label for="Television">
+			<input type="checkbox" name="Television"
+			id="Television" value="Television"/>
+			Television
+		</label>
+	</li>
+
+	<li class="list_item">
+		<label for="Computers">
+			<input type="checkbox" name="Computers"
+			id="Computers" value="Computers"/>
+			Computers
+		</label>
+	</li>
+	<li class="list_item">
+		<label for="Headphones">
+			<input type="checkbox" name="Headphones"
+			id="Headphones" value="Headphones"/>
+			Headphones
+		</label>
+	</li>
+  </ul>
+</section>
+
+
+	<section class="price-section">     
+		<h3 class="section-title"> Price Range</h3>		
+	<ul class="list">
+		<li class="list_item">
+			<label for="Price1">
+				<input type="radio" name="Price"
+				id="Price1" value="[0,20]"/>
+				$0-20$
+			</label>
+		</li>
+		
+
+		<li class="list_item">
+			<label for="Price2">
+				<input type="radio" name="Price"
+				id="Price2" value="[21,50]"/>
+				$21-50$
+			</label>
+		</li>
+		<li class="list_item">
+			<label for="Price3">
+				<input type="radio" name="Price"
+				id="Price3" value="[51,100]"/>
+				$51-100$
+			</label>
+		</li>
+
+
+		<li class="list_item">
+			<label for="Price4">
+				<input type="radio" name="Price"
+				id="Price4" value="[101,150]"/>
+				$101-150$
+			</label>
+		</li>
+
+		<li class="list_item">
+			<label for="Price5">
+				<input type="radio" name="Price"
+				id="Price5" value="[501+]"/>
+				$501+
+			</label>
+		</li>
+	</ul>
+	</section>
+
+	<section class="Shipping-section">     
+		<h3 class="section-title"> Shipping Options</h3>		
+	<ul class="list">
+		<li class="list_item">
+			<label for="free">
+				<input type="radio" name="Shipping"
+				id="Free" value="free"/>
+				Free
+			</label>
+		</li>
+
+		<li class="list_item">
+			<label for="Paid">
+				<input type="radio" name="Shipping"
+				id="Paid" value="free"/>
+				Paid
+			</label>
+		</li>
+		</ul>
+		</section>
+
+  </div>
+	
+	<div class="main-content"> 		
+		<section class="actions flex-space-around">
+			<div class="actions_sort"> 
+				<label for="sort"> Sort By: </label>
+				<select name="sort" id="sort">
+					<option value="sold"> Most sold first </option>
+					<option value="rating"> Most rated first </option>
+					<option value="Price"> Most Cheapest first </option>
+					<option value="arrival"> Newest First </option>
+					<option value="Discout"> Biggest Discount first </option>
+				</select>
+			</div>
+
+			<div class="actions_search">
+				<input type="text" placeholder="Search product"/>
+				<button class="btn">
+					<i class="fa-sharp fa-solid fa-magnifying-glass"> </i>
+				</button>
+			</div>
+		</section>
+
+
+Product section starts header
+
+<section class="products">
+	<article class="product card"> 
+		<div class="badge">
+			<span> 5 in stock  </span>
+			<hr class="hr-design"/>
+			<span> 3 sold </span>
+		</div>
+		<img class="product_img"src="./images/product1.jpg" alt="product1"/>
+		<div class="product_body">
+		<h3 class="product_name"> Sony V-4 Headphone</h3>	
+		
+		<p> 
+			<span class="dot green">    </span>
+			<span class="dot black">    </span>
+			<span class="dot red">    </span>
+		</p>
+
+		<p class="product_descrption">
+			Lorem ipsum, color site is very good for web developer commodities.....
+			<a href="/.product.html"
+			class="learn-more"> Learn More </a>		
+		</p>
+
+		<h4 class="Product_price"> $225.99  </h4>
+		<p class="product_rating"> Rating: 4.5/5  </p>
+		<button class="btn product_button"> Add to Cart </button>
+	  </div>
+	</article>
+
+
+	<article class="product card"> 
+		<div class="badge">
+			<span> 5 in stock  </span>
+			<hr class="hr-design"/>
+			<span> 3 sold </span>
+		</div>
+		<img class="product_img"src="./images/product1.jpg" alt="product1"/>
+		<div class="product_body">
+		<h3 class="product_name"> Sony V-4 Headphone</h3>	
+		
+		<p> 
+			<span class="dot green">    </span>
+			<span class="dot black">    </span>
+			<span class="dot red">    </span>
+		</p>
+
+		<p class="product_descrption">
+			Lorem ipsum, color site is very good for web developer commodities.....
+			<a href="/.product.html"
+			class="learn-more"> Learn More </a>		
+		</p>
+
+		<h4 class="Product_price"> $325.99  </h4>
+		<p class="product_rating"> Rating: 5.5/5  </p>
+		<button class="btn product_button"> Add to Cart </button>
+	  </div>
+	</article>
+
+	<article class="product card"> 
+		<div class="badge">
+			<span> 3 in stock  </span>
+			<hr class="hr-design"/>
+			<span> 12 sold </span>
+		</div>
+		<img class="product_img"src="./images/sea.png" alt="product3"/>
+		<div class="product_body">
+		<h3 class="product_name"> Sony V-4 Headphone</h3>	
+		
+		<p> 
+			<span class="dot green">    </span>
+			<span class="dot black">    </span>
+			<span class="dot red">    </span>
+		</p>
+
+		<p class="product_descrption">
+			Lorem ipsum, color site is very good for web developer commodities.....
+			<a href="/.product.html"
+			class="learn-more"> Learn More </a>		
+		</p>
+
+		<h4 class="Product_price"> $425.99  </h4>
+		<p class="product_rating"> Rating: 6.5/5  </p>
+		<button class="btn product_button"> Add to Cart </button>
+	  </div>
+	</article>
+
+
+	<article class="product card"> 
+		<div class="badge">
+			<span> 5 in stock  </span>
+			<hr class="hr-design"/>
+			<span> 3 sold </span>
+		</div>
+		<img class="product_img"src="./images/product1.jpg" alt="product1"/>
+		<div class="product_body">
+		<h3 class="product_name"> Sony V-4 Headphone</h3>	
+		
+		<p> 
+			<span class="dot green">    </span>
+			<span class="dot black">    </span>
+			<span class="dot red">    </span>
+		</p>
+
+		<p class="product_descrption">
+			Lorem ipsum, color site is very good for web developer commodities.....
+			<a href="/.product.html"
+			class="learn-more"> Learn More </a>		
+		</p>
+
+		<h4 class="Product_price"> $225.99  </h4>
+		<p class="product_rating"> Rating: 4.5/5  </p>
+		<button class="btn product_button"> Add to Cart </button>
+	  </div>
+	</article>
+
+
+	<article class="product card"> 
+		<div class="badge">
+			<span> 5 in stock  </span>
+			<hr class="hr-design"/>
+			<span> 3 sold </span>
+		</div>
+		<img class="product_img"src="./images/product1.jpg" alt="product1"/>
+		<div class="product_body">
+		<h3 class="product_name"> Sony V-4 Headphone</h3>	
+		
+		<p> 
+			<span class="dot green">    </span>
+			<span class="dot black">    </span>
+			<span class="dot red">    </span>
+		</p>
+
+		<p class="product_descrption">
+			Lorem ipsum, color site is very good for web developer commodities.....
+			<a href="/.product.html"
+			class="learn-more"> Learn More </a>		
+		</p>
+
+		<h4 class="Product_price"> $325.99  </h4>
+		<p class="product_rating"> Rating: 5.5/5  </p>
+		<button class="btn product_button"> Add to Cart </button>
+	  </div>
+	</article>
+
+	<article class="product card"> 
+		<div class="badge">
+			<span> 3 in stock  </span>
+			<hr class="hr-design"/>
+			<span> 12 sold </span>
+		</div>
+		<img class="product_img"src="./images/sea.png" alt="product3"/>
+		<div class="product_body">
+		<h3 class="product_name"> Sony V-4 Headphone</h3>	
+		
+		<p> 
+			<span class="dot green">    </span>
+			<span class="dot black">    </span>
+			<span class="dot red">    </span>
+		</p>
+
+		<p class="product_descrption">
+			Lorem ipsum, color site is very good for web developer commodities.....
+			<a href="/.product.html"
+			class="learn-more"> Learn More </a>		
+		</p>
+
+		<h4 class="Product_price"> $425.99  </h4>
+		<p class="product_rating"> Rating: 6.5/5  </p>
+		<button class="btn product_button"> Add to Cart </button>
+	  </div>
+	</article>
+</section>
+<div class="pagination">
+	<button class="btn pagination_btn">  <i class="fas fa-less-than"> </i> </button>
+	<button class="btn pagination_btn">   2 </button>
+	<button class="btn pagination_btn">   3 </button>
+	<button class="btn pagination_btn">   4 </button>
+	<button class="btn pagination_btn">   5 </button>
+	<button class="btn pagination_btn">   6 </button>
+	<button class="btn pagination_btn">   7 </button>
+	<button class="btn pagination_btn">   8 </button>
+	<button class="btn pagination_btn">   9 </button>
+	<button class="btn pagination_btn">   10 </button>
+	<button class="btn pagination_btn">   11 </button>
+	<button class="btn pagination_btn">   12 </button>
+	<button class="btn pagination_btn">   13 </button>
+	<button class="btn pagination_btn">   ... </button>
+	<button class="btn pagination_btn">   50 </button>
+	<button class="btn pagination_btn">  <i class="fas fa-greater-than"> </i> </button>
+
+Product section  ends here
+
+</div>
+  </main>
+
+  footer Ends here
+	<Footer class="footer flex-space-around">
+		<div class="flex-space-around">   
+			<label for="Subscribe"> Subscribe To Newsletter</label>		
+			<input type="email" 
+			id="Subscribe"
+			name="Subscribe"
+			class="footer_input"
+			placeholder="Your Email Address"/>
+			<button class="btn btn-subscribe"> Subscribe </button>
+
+		</div>
+		<div> 				
+			<p> &copy; Copyright 2023 Galaxy It Park. All rights reserved</p>
+			
+		</div>
+</Footer>
+footer Ends here
+<script src="./scripts/index.js"></script>
+</body>
+</html>  
